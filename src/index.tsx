@@ -1,6 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import Hello from './containers/Hello';
+import Button from './components/Button';
+import Label from './components/Label';
+import Input from './components/Input';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import { Provider } from 'react-redux';
@@ -19,6 +22,22 @@ ReactDOM.render(
         <Hello />
     </Provider>,
     document.getElementById('root') as HTMLElement
+);
+
+ReactDOM.render(
+    <Button label="boom"/>,
+    document.getElementById('button') as HTMLElement
+);
+
+
+ReactDOM.render(
+    <Label htmlFor="boom" label="form label"/>,
+    document.getElementById('label') as HTMLElement
+);
+
+ReactDOM.render(
+    <Input type="text"/>,
+    document.getElementById('input') as HTMLElement
 );
 
 registerServiceWorker();
