@@ -30,19 +30,21 @@ ReactDOM.render(
     document.getElementById('button') as HTMLElement
 );
 
-
-ReactDOM.render(
-    <Label htmlFor="boom" label="form label"/>,
-    document.getElementById('label') as HTMLElement
-);
-
 ReactDOM.render(
     <Input type="text" id="test" name="test" value=""/>,
     document.getElementById('input') as HTMLElement
 );
 
 ReactDOM.render(
-    <Field label="Hello" />,
+    <Label htmlFor="boom" label="form label"/>,
+    document.getElementById('label') as HTMLElement
+);
+
+
+ReactDOM.render(
+    <Field heading="Hello" label="boo">
+        <Label htmlFor="boom" label="form label"/>
+    </Field>,
     document.getElementById('field') as HTMLElement
 );
 

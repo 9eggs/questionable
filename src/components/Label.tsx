@@ -1,9 +1,9 @@
 import * as React from 'react';
 import './Label.css';
+
 export interface Props {
     label: string;
-    htmlFor: string;
-
+    htmlFor?: string;
 }
 
 function Label({htmlFor, label}: Props) {
