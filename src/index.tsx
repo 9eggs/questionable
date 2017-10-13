@@ -4,6 +4,7 @@ import Hello from './containers/Hello';
 import Button from './components/Button';
 import Label from './components/Label';
 import Input from './components/Input';
+import Field from './components/Field';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import { Provider } from 'react-redux';
@@ -38,6 +39,11 @@ ReactDOM.render(
 ReactDOM.render(
     <Input type="text" id="test" name="test" value=""/>,
     document.getElementById('input') as HTMLElement
+);
+
+ReactDOM.render(
+    <Field label="Hello" />,
+    document.getElementById('field') as HTMLElement
 );
 
 registerServiceWorker();
