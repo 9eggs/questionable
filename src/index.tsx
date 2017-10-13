@@ -36,7 +36,7 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <Input type="text"/>,
+    <Input type="text" id="test" name="test" value=""/>,
     document.getElementById('input') as HTMLElement
 );
 
