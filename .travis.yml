@@ -1,0 +1,5 @@
+script:
+  - "yarn test"
+language: node_js
+node_js:
+  - 8.7.0
